@@ -1,0 +1,26 @@
+{
+  "name": "zadatak",
+  "version": "1.0.0",
+  "description": "gRPC API za upravljanje korisničkim nalozima (Node.js + MongoDB)",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start:server": "node server.js",
+    "start:client": "node client.js"
+  },
+  "keywords": [
+    "grpc",
+    "nodejs",
+    "mongodb",
+    "protobuf",
+    "users"
+  ],
+  "author": "Andrija Musić",
+  "license": "MIT",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.11.1",
+    "@grpc/proto-loader": "^0.7.10",
+    "dotenv": "^17.2.1",
+    "mongoose": "^8.18.0"
+  }
+}

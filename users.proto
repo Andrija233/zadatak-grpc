@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package users;
+
+service UserService {
+  rpc GetUsers (GetUsersRequest) returns (UserList);
+  rpc CreateUser (CreateUserRequest) returns (User);
+  rpc DeleteUser (DeleteUserRequest) returns (Empty);
+}
+
+message Empty {}
+
+message User {
+  string id = 1;
+  string name = 2;
+  string email = 3;
+}
+
+message UserList {
+  repeated User users = 1;
+}
+
+message GetUsersRequest {
+  string name = 1; // opcioni filter (ako je prazan, vrati sve)
+}
+
+message CreateUserRequest {
+  string name = 1;
+  string email = 2;
+}
+
+message DeleteUserRequest {
+  string id = 1; // ID korisnika koji se briše
+}
