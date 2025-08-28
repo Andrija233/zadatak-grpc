@@ -1,6 +1,0 @@
--Srediti main funkciju u client.js
--srediti validaciju e-mail adrese
-pretraga po imenu u getUsers Metodi
-dodavanje DeleteUser| grpc metode
-napisati readme
-snimiti video
